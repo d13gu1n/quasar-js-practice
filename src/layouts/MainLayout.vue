@@ -9,7 +9,7 @@
     </q-header>
     <q-page-container>
       <q-btn unelevated dense label="Probá" no-caps color="primary" @click="testMethod" class="q-py-sm" />
-      <JSJamboard :passedTestLabel="testLabel"/>
+      <JSJamboard :passedTestLabel="testLabel" class="jamboard-size"/>
     </q-page-container>
   </q-layout>
 </template>
@@ -41,3 +41,9 @@ export default defineComponent({
   },
 })
 </script>
+<style lang="scss">
+.jamboard-size {
+  width: 100%;
+  height: 100%;
+}
+</style>
